@@ -21,15 +21,20 @@ class _MyAppState extends State<MyApp> {
           title: Text('Animasi'),
         ),
         body: Center(
-          child: AnimatedContainer(
-            duration: Duration(seconds: 1),
-            width: 50.0 + random.nextInt(101),
-            height: 50.0 + random.nextInt(101),
-            color: Color.fromARGB(
-              255,
-              random.nextInt(256),
-              random.nextInt(256),
-              random.nextInt(256),
+          child: GestureDetector(
+            onTap: () {
+              setState(() {});
+            },
+            child: AnimatedContainer(
+              duration: Duration(milliseconds: 500),
+              width: 50.0 + random.nextInt(101),
+              height: 50.0 + random.nextInt(101),
+              color: Color.fromARGB(
+                255,
+                random.nextInt(256),
+                random.nextInt(256),
+                random.nextInt(256),
+              ),
             ),
           ),
         ),
