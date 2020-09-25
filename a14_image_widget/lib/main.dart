@@ -5,10 +5,10 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  String alamat =
+  final String alamat =
       'https://vignette.wikia.nocookie.net/naruto/images/d/dd/Naruto_Uzumaki%21%21.png/revision/latest/scale-to-width-down/1000?cb=20161013233552';
-  String alamat1 = 'assets/signs.svg';
-  String alamat2 = 'assets/images-icon.png';
+  final String alamat1 = 'assets/signs.svg';
+  final String alamat2 = 'assets/images-icon.png';
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
