@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               RaisedButton(
@@ -40,16 +41,19 @@ class MyApp extends StatelessWidget {
                   child: Material(
                     color: Colors.transparent,
                     child: InkWell(
+                      borderRadius: BorderRadius.circular(20),
                       onTap: () {},
                       splashColor: Colors.green,
+                      hoverColor: Colors.green,
                       child: Center(
-                          child: Text(
-                        'My Button',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+                        child: Text(
+                          'My Button',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      )),
+                      ),
                     ),
                   ),
                 ),
